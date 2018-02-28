@@ -1,0 +1,4 @@
+#Wed Feb 28 17:44:07 WET 2018
+base.0=/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/omniDashboard/cordova/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/omniDashboard/cordova/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex
