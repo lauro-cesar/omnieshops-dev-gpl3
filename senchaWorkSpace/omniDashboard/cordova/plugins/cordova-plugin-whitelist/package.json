@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/omniDashboard/cordova"
+      "/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/OmniDashboard/cordova"
     ]
   ],
   "_from": "cordova-plugin-whitelist@>=1.0.0 <2.0.0",
@@ -45,7 +45,7 @@
   "_shasum": "b5e85ecdbbfe5aeded40a1bf4ee2372e67d96fb4",
   "_shrinkwrap": null,
   "_spec": "cordova-plugin-whitelist@1",
-  "_where": "/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/omniDashboard/cordova",
+  "_where": "/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/OmniDashboard/cordova",
   "author": {
     "name": "Apache Software Foundation"
   },

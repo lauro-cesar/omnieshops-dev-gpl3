@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.omnieshops.omniDashboard" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>omniDashboard</name>
+<widget id="com.domain.OmniDashboard" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>OmniDashboard</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -23,7 +23,8 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="osx" spec="^4.0.1" />
-    <engine name="android" spec="^7.0.0" />
+    <plugin name="cordova-plugin-console" spec="^1.1.0" />
     <engine name="ios" spec="^4.5.4" />
+    <engine name="android" spec="^7.0.0" />
+    <engine name="osx" spec="^4.0.1" />
 </widget>

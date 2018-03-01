@@ -1,5 +1,5 @@
-$app-name:  dynamic( 'omniDashboard' );
-$image-search-path: '/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/omniDashboard/cordova/www/classic/resources';
+$app-name:  dynamic( 'OmniDashboard' );
+$image-search-path: '/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/OmniDashboard/cordova/www/classic/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
@@ -907,11 +907,47 @@ $include-ext-window-messagebox: dynamic(true);;
 $include-ext-window-toast: dynamic(true);;
 $include-ext-window-window: dynamic(true);;
 $include-omnidashboard-application: dynamic(true);;
-$include-omnidashboard-store-personnel: dynamic(true);;
-$include-omnidashboard-view-main-list: dynamic(true);;
-$include-omnidashboard-view-main-main: dynamic(true);;
-$include-omnidashboard-view-main-maincontroller: dynamic(true);;
-$include-omnidashboard-view-main-mainmodel: dynamic(true);;
+$include-omnidashboard-model-omnisession: dynamic(true);;
+$include-omnidashboard-model-omnisetting: dynamic(true);;
+$include-omnidashboard-model-omnisite: dynamic(true);;
+$include-omnidashboard-model-omnisitesync: dynamic(true);;
+$include-omnidashboard-model-omnitask: dynamic(true);;
+$include-omnidashboard-model-shared-omnimodel: dynamic(true);;
+$include-omnidashboard-model-shared-omnisitemodel: dynamic(true);;
+$include-omnidashboard-view-aboutus-aboutus: dynamic(true);;
+$include-omnidashboard-view-aboutus-contactus: dynamic(true);;
+$include-omnidashboard-view-aboutus-developer: dynamic(true);;
+$include-omnidashboard-view-aboutus-licence: dynamic(true);;
+$include-omnidashboard-view-aboutus-omnieshops: dynamic(true);;
+$include-omnidashboard-view-accountlogout-accountlogout: dynamic(true);;
+$include-omnidashboard-view-bigpicture-bigpicture: dynamic(true);;
+$include-omnidashboard-view-customercare-customercare: dynamic(true);;
+$include-omnidashboard-view-inventorymanager-inventorymanager: dynamic(true);;
+$include-omnidashboard-view-marketingmanager-marketingmanager: dynamic(true);;
+$include-omnidashboard-view-omni-dashboard: dynamic(true);;
+$include-omnidashboard-view-omni-omnicontroller: dynamic(true);;
+$include-omnidashboard-view-omni-omnimain: dynamic(true);;
+$include-omnidashboard-view-omni-omniviewmodel: dynamic(true);;
+$include-omnidashboard-view-ordermanager-ordermanager: dynamic(true);;
+$include-omnidashboard-view-shared-omnibutton: dynamic(true);;
+$include-omnidashboard-view-shared-omnidataview: dynamic(true);;
+$include-omnidashboard-view-shared-omninav: dynamic(true);;
+$include-omnidashboard-view-shared-omnipanel: dynamic(true);;
+$include-omnidashboard-view-shared-omnitappanel: dynamic(true);;
+$include-omnidashboard-view-shared-omnitoolbutton: dynamic(true);;
+$include-omnidashboard-view-shared-omnitoolbar: dynamic(true);;
+$include-omnidashboard-view-shared-omnitray: dynamic(true);;
+$include-omnidashboard-view-shared-omniwindow: dynamic(true);;
+$include-omnidashboard-view-shared-textrequiredvalidator: dynamic(true);;
+$include-omnidashboard-view-systemsettings-systemsettings: dynamic(true);;
+$include-omnidashboard-view-systemsettings-useraccount: dynamic(true);;
+$include-omnidashboard-view-systemsettings-userpreferences: dynamic(true);;
+$include-omnidashboard-view-usersupport-comunitysupport: dynamic(true);;
+$include-omnidashboard-view-usersupport-paidsupport: dynamic(true);;
+$include-omnidashboard-view-usersupport-usersupport: dynamic(true);;
+$include-omnidashboard-view-wizardmanager-sitesdataview: dynamic(true);;
+$include-omnidashboard-view-wizardmanager-sitesmanager: dynamic(true);;
+$include-omnidashboard-view-wizardmanager-wizardmanager: dynamic(true);;
 
 
 /* ======================== ETC ======================== */
@@ -972,13 +1008,13 @@ $current-resource-root: $theme-triton-resource-root;
 $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext62/classic/theme-triton/sass/etc/all';
 
-/* including package omniDashboard */
-$omniDashboard-resource-root: '' !default;
-$omniDashboard-resource-path: 'images' !default;
+/* including package OmniDashboard */
+$OmniDashboard-resource-root: '' !default;
+$OmniDashboard-resource-path: 'images' !default;
 $current-package: false;
-$current-resource-root: $omniDashboard-resource-root;
-$relative-image-path-for-uis: $omniDashboard-resource-path;
-@import '../../../../../omniDashboard/sass/etc/all';
+$current-resource-root: $OmniDashboard-resource-root;
+$relative-image-path-for-uis: $OmniDashboard-resource-path;
+@import '../../../../../OmniDashboard/sass/etc/all';
 
 
 /* ======================== VAR ======================== */
@@ -1156,13 +1192,21 @@ $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext62/classic/theme-triton/sass/var/tab/Bar';
 @import '../../../../../ext62/classic/theme-triton/sass/var/tree/View';
 
-/* including package omniDashboard */
-$omniDashboard-resource-root: '' !default;
-$omniDashboard-resource-path: 'images' !default;
+/* including package OmniDashboard */
+$OmniDashboard-resource-root: '' !default;
+$OmniDashboard-resource-path: 'images' !default;
 $current-package: false;
-$current-resource-root: $omniDashboard-resource-root;
-$relative-image-path-for-uis: $omniDashboard-resource-path;
-@import '../../../../../omniDashboard/sass/var/all';
+$current-resource-root: $OmniDashboard-resource-root;
+$relative-image-path-for-uis: $OmniDashboard-resource-path;
+@import '../../../../../OmniDashboard/sass/var/all';
+
+/* including package OmniDashboard */
+$OmniDashboard-resource-root: '' !default;
+$OmniDashboard-resource-path: 'images' !default;
+$current-package: false;
+$current-resource-root: $OmniDashboard-resource-root;
+$relative-image-path-for-uis: $OmniDashboard-resource-path;
+@import '../../../../../OmniDashboard/classic/sass/var/all';
 
 
 /* ======================== RULE ======================== */
@@ -1371,11 +1415,3 @@ $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext62/classic/theme-triton/sass/src/menu/Menu';
 @import '../../../../../ext62/classic/theme-triton/sass/src/tab/Tab';
 @import '../../../../../ext62/classic/theme-triton/sass/src/window/Toast';
-
-/* including package omniDashboard */
-$omniDashboard-resource-root: '' !default;
-$omniDashboard-resource-path: 'images' !default;
-$current-package: false;
-$current-resource-root: $omniDashboard-resource-root;
-$relative-image-path-for-uis: $omniDashboard-resource-path;
-@import '../../../../../omniDashboard/classic/sass/src/view/main/Main';

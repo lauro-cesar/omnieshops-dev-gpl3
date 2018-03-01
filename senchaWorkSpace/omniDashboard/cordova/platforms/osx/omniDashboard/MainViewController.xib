@@ -35,10 +35,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
-                <menuItem title="omniDashboard" id="56">
-                    <menu key="submenu" title="omniDashboard" systemMenu="apple" id="57">
+                <menuItem title="OmniDashboard" id="56">
+                    <menu key="submenu" title="OmniDashboard" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About omniDashboard" id="58">
+                            <menuItem title="About OmniDashboard" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
@@ -86,7 +86,7 @@
                             <menuItem isSeparatorItem="YES" id="149">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Quit omniDashboard" keyEquivalent="q" id="136">
+                            <menuItem title="Quit OmniDashboard" keyEquivalent="q" id="136">
                                 <connections>
                                     <action selector="terminate:" target="-3" id="449"/>
                                 </connections>
@@ -317,7 +317,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="491">
                         <items>
-                            <menuItem title="omniDashboard Help" keyEquivalent="?" id="492">
+                            <menuItem title="OmniDashboard Help" keyEquivalent="?" id="492">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="493"/>
                                 </connections>
@@ -327,7 +327,7 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="omniDashboard" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="371" customClass="CDVMainWindow">
+        <window title="OmniDashboard" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="371" customClass="CDVMainWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <rect key="contentRect" x="335" y="299" width="640" height="480"/>

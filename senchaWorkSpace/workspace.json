@@ -3,8 +3,8 @@
      *  An array of the paths to all the applications present in this workspace
      */
     "apps": [
-        "demo",
-        "omniDashboard"
+        "OmniDashboard",
+        "OmniFrontEnd"
     ],
 
     /**
@@ -30,6 +30,7 @@
             "path":"ext62",
             "version":"6.2.0.981"
         }
+        
         
         
         

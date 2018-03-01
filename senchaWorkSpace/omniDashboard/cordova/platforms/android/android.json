@@ -19,12 +19,16 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.omnieshops.omniDashboard"
+      "PACKAGE_NAME": "com.domain.OmniDashboard"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.domain.OmniDashboard"
     }
   },
   "dependent_plugins": {},
   "modules": [],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.3"
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-console": "1.1.0"
   }
 }

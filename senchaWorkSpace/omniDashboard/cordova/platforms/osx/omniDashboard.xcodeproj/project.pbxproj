@@ -57,16 +57,16 @@
 
 /* Begin PBXFileReference section */
 		707060AE18FFC05700755D46 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		707060B018FFC0D900755D46 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "omniDashboard/config.xml"; sourceTree = "<group>"; };
-		70BD682318FFB02D00A1EFCF /* omniDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "omniDashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		707060B018FFC0D900755D46 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "OmniDashboard/config.xml"; sourceTree = "<group>"; };
+		70BD682318FFB02D00A1EFCF /* OmniDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OmniDashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BD682618FFB02D00A1EFCF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		70BD682918FFB02D00A1EFCF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		70BD682A18FFB02D00A1EFCF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		70BD682B18FFB02D00A1EFCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		70BD682E18FFB02D00A1EFCF /* omniDashboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "omniDashboard-Info.plist"; sourceTree = "<group>"; };
+		70BD682E18FFB02D00A1EFCF /* OmniDashboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OmniDashboard-Info.plist"; sourceTree = "<group>"; };
 		70BD683018FFB02D00A1EFCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70BD683218FFB02D00A1EFCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		70BD683418FFB02D00A1EFCF /* omniDashboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "omniDashboard-Prefix.pch"; sourceTree = "<group>"; };
+		70BD683418FFB02D00A1EFCF /* OmniDashboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OmniDashboard-Prefix.pch"; sourceTree = "<group>"; };
 		70BD683E18FFB02D00A1EFCF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70BD685A18FFB04300A1EFCF /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		70BD686418FFB06500A1EFCF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -98,7 +98,7 @@
 			children = (
 			);
 			name = Plugins;
-			path = "omniDashboard/Plugins";
+			path = "OmniDashboard/Plugins";
 			sourceTree = SOURCE_ROOT;
 		};
 		70BD681A18FFB02D00A1EFCF = {
@@ -106,7 +106,7 @@
 			children = (
 				707060B018FFC0D900755D46 /* config.xml */,
 				70DAA8D91908785C00AF3749 /* www */,
-				70BD682C18FFB02D00A1EFCF /* omniDashboard */,
+				70BD682C18FFB02D00A1EFCF /* OmniDashboard */,
 				70BD686818FFB0BF00A1EFCF /* Classes */,
 				7069FBC31905A1F9000B48E1 /* Plugins */,
 				70D86C851B903D11000750E0 /* Resources */,
@@ -118,7 +118,7 @@
 		70BD682418FFB02D00A1EFCF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70BD682318FFB02D00A1EFCF /* omniDashboard.app */,
+				70BD682318FFB02D00A1EFCF /* OmniDashboard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,23 +145,23 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		70BD682C18FFB02D00A1EFCF /* omniDashboard */ = {
+		70BD682C18FFB02D00A1EFCF /* OmniDashboard */ = {
 			isa = PBXGroup;
 			children = (
 				707060AE18FFC05700755D46 /* MainViewController.xib */,
 				70BD683E18FFB02D00A1EFCF /* Images.xcassets */,
 				70BD682D18FFB02D00A1EFCF /* Supporting Files */,
 			);
-			path = "omniDashboard";
+			path = "OmniDashboard";
 			sourceTree = "<group>";
 		};
 		70BD682D18FFB02D00A1EFCF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				70BD682E18FFB02D00A1EFCF /* omniDashboard-Info.plist */,
+				70BD682E18FFB02D00A1EFCF /* OmniDashboard-Info.plist */,
 				70BD682F18FFB02D00A1EFCF /* InfoPlist.strings */,
 				70BD683218FFB02D00A1EFCF /* main.m */,
-				70BD683418FFB02D00A1EFCF /* omniDashboard-Prefix.pch */,
+				70BD683418FFB02D00A1EFCF /* OmniDashboard-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 				70BD686C18FFB0BF00A1EFCF /* MainViewController.m */,
 			);
 			name = Classes;
-			path = "omniDashboard/Classes";
+			path = "OmniDashboard/Classes";
 			sourceTree = "<group>";
 		};
 		70D86C851B903D11000750E0 /* Resources */ = {
@@ -192,15 +192,15 @@
 			children = (
 			);
 			name = Resources;
-			path = "omniDashboard/Resources";
+			path = "OmniDashboard/Resources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		70BD682218FFB02D00A1EFCF /* omniDashboard */ = {
+		70BD682218FFB02D00A1EFCF /* OmniDashboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70BD685418FFB02D00A1EFCF /* Build configuration list for PBXNativeTarget "omniDashboard" */;
+			buildConfigurationList = 70BD685418FFB02D00A1EFCF /* Build configuration list for PBXNativeTarget "OmniDashboard" */;
 			buildPhases = (
 				70BD687218FFB1A300A1EFCF /* Copy www directory */,
 				70BD681F18FFB02D00A1EFCF /* Sources */,
@@ -213,9 +213,9 @@
 			dependencies = (
 				70BD687118FFB19500A1EFCF /* PBXTargetDependency */,
 			);
-			name = "omniDashboard";
-			productName = "omniDashboard";
-			productReference = 70BD682318FFB02D00A1EFCF /* omniDashboard.app */;
+			name = "OmniDashboard";
+			productName = "OmniDashboard";
+			productReference = 70BD682318FFB02D00A1EFCF /* OmniDashboard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +227,7 @@
 				LastUpgradeCheck = 510;
 				ORGANIZATIONNAME = __CDV_ORGANIZATION_NAME__;
 			};
-			buildConfigurationList = 70BD681E18FFB02D00A1EFCF /* Build configuration list for PBXProject "omniDashboard" */;
+			buildConfigurationList = 70BD681E18FFB02D00A1EFCF /* Build configuration list for PBXProject "OmniDashboard" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -246,7 +246,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				70BD682218FFB02D00A1EFCF /* omniDashboard */,
+				70BD682218FFB02D00A1EFCF /* OmniDashboard */,
 			);
 		};
 /* End PBXProject section */
@@ -419,8 +419,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "omniDashboard/omniDashboard-Prefix.pch";
-				INFOPLIST_FILE = "omniDashboard/omniDashboard-Info.plist";
+				GCC_PREFIX_HEADER = "OmniDashboard/OmniDashboard-Prefix.pch";
+				INFOPLIST_FILE = "OmniDashboard/OmniDashboard-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -433,8 +433,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "omniDashboard/omniDashboard-Prefix.pch";
-				INFOPLIST_FILE = "omniDashboard/omniDashboard-Info.plist";
+				GCC_PREFIX_HEADER = "OmniDashboard/OmniDashboard-Prefix.pch";
+				INFOPLIST_FILE = "OmniDashboard/OmniDashboard-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -444,7 +444,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70BD681E18FFB02D00A1EFCF /* Build configuration list for PBXProject "omniDashboard" */ = {
+		70BD681E18FFB02D00A1EFCF /* Build configuration list for PBXProject "OmniDashboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70BD685218FFB02D00A1EFCF /* Debug */,
@@ -453,7 +453,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70BD685418FFB02D00A1EFCF /* Build configuration list for PBXNativeTarget "omniDashboard" */ = {
+		70BD685418FFB02D00A1EFCF /* Build configuration list for PBXNativeTarget "OmniDashboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70BD685518FFB02D00A1EFCF /* Debug */,

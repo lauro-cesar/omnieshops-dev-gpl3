@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/omniDashboard/cordova/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/OmniDashboard/cordova/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/omniDashboard/cordova/platforms/android/app/src/main/res/values/strings.xml",
+                    "source": "/Users/olarva/Documents/Projetos/opensource/omnieshops-dev-gpl3/senchaWorkSpace/OmniDashboard/cordova/platforms/android/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",

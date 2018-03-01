@@ -1,6 +1,6 @@
 {
-  "name": "com.omnieshops.omnidashboard",
-  "displayName": "omniDashboard",
+  "name": "com.domain.omnidashboard",
+  "displayName": "OmniDashboard",
   "version": "1.0.0",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
@@ -13,16 +13,18 @@
     "cordova-android": "^7.0.0",
     "cordova-ios": "^4.5.4",
     "cordova-osx": "^4.0.1",
+    "cordova-plugin-console": "^1.1.0",
     "cordova-plugin-whitelist": "^1.3.3"
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-console": {}
     },
     "platforms": [
-      "osx",
+      "ios",
       "android",
-      "ios"
+      "osx"
     ]
   }
 }

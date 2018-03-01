@@ -7,8 +7,11 @@
     "files": {}
   },
   "installed_plugins": {
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.domain.OmniDashboard"
+    },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.omnieshops.omniDashboard"
+      "PACKAGE_NAME": "com.domain.OmniDashboard"
     }
   },
   "dependent_plugins": {},

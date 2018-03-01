@@ -17,7 +17,7 @@
  under the License.
  */
 //
-// Prefix header for all source files of the 'omniDashboard' target in the 'omniDashboard' project
+// Prefix header for all source files of the 'OmniDashboard' target in the 'OmniDashboard' project
 //
 
 #ifdef __OBJC__

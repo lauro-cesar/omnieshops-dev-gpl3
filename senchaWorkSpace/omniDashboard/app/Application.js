@@ -1,30 +1,27 @@
-/**
- * The main application class. An instance of this class is created by app.js when it
- * calls Ext.application(). This is the ideal place to handle application launch and
- * initialization details.
- */
-Ext.define('omniDashboard.Application', {
+Ext.define('OmniDashboard.Application', {
     extend: 'Ext.app.Application',
-
-    name: 'omniDashboard',
-
+    name: 'OmniDashboard',
     quickTips: false,
+    defaultToken:'app/systemSettings',
     platformConfig: {
         desktop: {
             quickTips: true
         }
     },
-
-    stores: [
-        // TODO: add global / shared stores here
+    models:[
+        'OmniSession','OmniTask','OmniSetting','OmniSite'
     ],
-
+    requires:[
+        'OmniDashboard.view.omni.OmniMain'
+    ],
     launch: function () {
-        // TODO - Launch the application
+        var mainView = Ext.create('OmniDashboard.view.omni.OmniMain',{
+            id:'omniMainPage'
+        });
     },
-
     onAppUpdate: function () {
-        Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
+
+        Ext.Msg.confirm('Atualização disponível', 'Existe uma atualização, gostaria de baixar agora?',
             function (choice) {
                 if (choice === 'yes') {
                     window.location.reload();

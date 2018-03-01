@@ -8,7 +8,7 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.omnieshops.omniDashboard"
+      "PACKAGE_NAME": "com.domain.OmniDashboard"
     }
   },
   "dependent_plugins": {}
