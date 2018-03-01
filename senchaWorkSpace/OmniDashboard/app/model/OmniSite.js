@@ -1,5 +1,5 @@
 Ext.define('OmniDashboard.model.OmniSite', {
-    extend: 'OmniDashboard.model.shared.OmniSiteModel',
+    extend: 'OmniDashboard.model.OmniSiteModel',
     alias: 'model.omniSite',
     proxy: {
         type: 'localstorage',

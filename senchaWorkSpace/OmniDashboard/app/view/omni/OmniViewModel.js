@@ -16,7 +16,7 @@ Ext.define('OmniDashboard.view.omni.OmniViewModel', {
                         }
                     },
                     "omni":{
-                        "shared":{
+                        "util":{
                             "TextRequiredValidator":{
                                 "emptyMessage":"Campo requerido"
                                 }
@@ -99,14 +99,14 @@ Ext.define('OmniDashboard.view.omni.OmniViewModel', {
             id:'omniSitesSync',
             clearOnPageLoad:false,
             autoSync:false,
-            model:'OmniSiteSync',
+            model:'OmniDashboard.model.OmniSiteSync',
             autoLoad:false,
             session:false
         },        
         omniSites:{
             id:'omniSites',
             autoSync:true,
-            model:'OmniSite',
+            model:'OmniDashboard.model.OmniSite',
             autoLoad:true,
             remoteFilter:true,
             session:true
@@ -114,19 +114,19 @@ Ext.define('OmniDashboard.view.omni.OmniViewModel', {
         omniSettings:{
             id:'omniSettings',
             autoSync:true,
-            model:'OmniSetting',
+            model:'OmniDashboard.model.OmniSetting',
             autoLoad: true,
             session:true
         },
         omniSession:{
             id:'omniSession',
-            model:'OmniSession',
+            model:'OmniDashboard.model.OmniSession',
             autoLoad: false,
             session:true
         },
         omniTaskQueue:{
             id:'omniTaskQueue',
-            model:'OmniTask',
+            model:'OmniDashboard.model.OmniTask',
             autoLoad:true,
             session:true
         }

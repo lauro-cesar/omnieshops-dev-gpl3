@@ -1,5 +1,5 @@
 Ext.define("OmniDashboard.view.wizardManager.SitesDataView",{
-    extend: "OmniDashboard.view.shared.OmniDataView",
+    extend: "OmniDashboard.view.util.OmniDataView",
     initComponent: function (arguments) {
         this.callParent(arguments);
     },

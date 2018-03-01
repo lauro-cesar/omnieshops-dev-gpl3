@@ -1,0 +1,31 @@
+Ext.define("OmniDashboard.view.aboutUs.AboutUs",{
+    extend: "OmniDashboard.view.util.OmniPanel",
+    alias:'widget.aboutUs',
+    xtype:'aboutUs',
+    requires:[
+        'OmniDashboard.view.aboutUs.Developer',
+        'OmniDashboard.view.aboutUs.OmniEshops',
+        'OmniDashboard.view.aboutUs.ContactUs',
+        'OmniDashboard.view.aboutUs.Licence'
+    ],
+    layout:'fit',
+    items:[
+        {
+            xtype:'omniTabPanel',
+            items:[
+                {
+                    xtype:'omniEshops'
+                },
+                {
+                    xtype:'contactUs'
+                },
+                {
+                    xtype:'developer'
+                },
+                {
+                    xtype:'licence'
+                }
+            ]
+        }
+    ]
+    });

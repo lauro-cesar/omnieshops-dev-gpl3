@@ -1,14 +1,15 @@
 Ext.define("OmniDashboard.view.omni.Dashboard",{
-    extend: "OmniDashboard.view.shared.OmniPanel",
+    extend: "OmniDashboard.view.util.OmniPanel",
     initComponent: function () {
         this.callParent(arguments);
     },
     requires:[
-        'OmniDashboard.view.shared.OmniDataView',
-        'OmniDashboard.view.shared.OmniPanel',
-        'OmniDashboard.view.shared.OmniToolbar',
-        'OmniDashboard.view.shared.OmniNav',
-        'OmniDashboard.view.shared.OmniTray',
+        'OmniDashboard.view.util.OmniDataView',
+        'OmniDashboard.view.util.OmniPanel',
+        'OmniDashboard.view.util.OmniToolbar',
+        'OmniDashboard.view.util.OmniTabPanel',
+        'OmniDashboard.view.util.OmniNav',
+        'OmniDashboard.view.util.OmniTray',
         'OmniDashboard.view.bigPicture.BigPicture',  
         'OmniDashboard.view.customerCare.CustomerCare',
         'OmniDashboard.view.orderManager.OrderManager',

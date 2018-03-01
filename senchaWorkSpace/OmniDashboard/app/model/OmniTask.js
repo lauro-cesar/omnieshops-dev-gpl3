@@ -1,6 +1,6 @@
 
 Ext.define('OmniDashboard.model.OmniTask', {
-    extend: 'OmniDashboard.model.shared.OmniModel',
+    extend: 'OmniDashboard.model.OmniModel',
     alias: 'model.omniTask',
     proxy: {
         type: 'localstorage',

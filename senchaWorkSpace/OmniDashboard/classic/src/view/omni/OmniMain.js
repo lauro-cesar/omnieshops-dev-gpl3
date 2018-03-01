@@ -6,7 +6,6 @@ Ext.define('OmniDashboard.view.omni.OmniMain', {
     requires: [
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
-        'OmniDashboard.view.shared.OmniTapPanel',
         'OmniDashboard.view.omni.Dashboard'
     ],
     responsiveConfig: {

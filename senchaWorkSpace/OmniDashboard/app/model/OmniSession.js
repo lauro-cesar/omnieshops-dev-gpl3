@@ -1,5 +1,5 @@
 Ext.define('OmniDashboard.model.OmniSession', {
-    extend: 'OmniDashboard.model.shared.OmniModel',
+    extend: 'OmniDashboard.model.OmniModel',
     alias: 'model.omniSession',
     proxy: {
         type: 'jsonp',

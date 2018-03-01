@@ -1,5 +1,5 @@
 Ext.define('OmniDashboard.model.OmniSiteSync', {
-    extend: 'OmniDashboard.model.shared.OmniSiteModel',
+    extend: 'OmniDashboard.model.OmniSiteModel',
     alias: 'model.omniSiteSync',
     proxy: {
         type: 'jsonp',

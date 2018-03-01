@@ -9,16 +9,11 @@ Ext.define('OmniDashboard.Application', {
         }
     },
     models:[
-        'OmniSession','OmniTask','OmniSetting','OmniSite'
+        'OmniSession','OmniTask','OmniSetting','OmniSite','OmniSiteSync'
     ],
     requires:[
         'OmniDashboard.view.omni.OmniMain'
     ],
-    launch: function () {
-        var mainView = Ext.create('OmniDashboard.view.omni.OmniMain',{
-            id:'omniMainPage'
-        });
-    },
     onAppUpdate: function () {
 
         Ext.Msg.confirm('Atualização disponível', 'Existe uma atualização, gostaria de baixar agora?',

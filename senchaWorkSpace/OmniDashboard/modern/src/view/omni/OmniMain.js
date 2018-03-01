@@ -1,15 +1,20 @@
 Ext.define('OmniDashboard.view.omni.OmniMain', {
-    extend: "OmniDashboard.view.shared.OmniPanel",
+    extend: "OmniDashboard.view.util.OmniPanel",
     xtype: 'omniMain',
     controller: 'omniController',
     viewModel: 'omniViewModel',
-    layout:'fit',
+    requires:[
+        'OmniDashboard.view.omni.Dashboard'
+    ],
+    layout:'vbox',
     items:[
         {
-            xtype: 'omniPanel',
-            title:'Teste de Painel',
-            html:'Teste de Painel.'
+            xtype: 'omniNav',
+            docked : 'bottom',
+        },
+        {
+            xtype: 'omniDashboard',
+            flex:1
         }
     ]
 });
-
