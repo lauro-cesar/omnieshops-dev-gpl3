@@ -3,18 +3,13 @@ Ext.define('OmniDashboard.view.omni.OmniMain', {
     xtype: 'omniMain',
     controller: 'omniController',
     viewModel: 'omniViewModel',
-    requires:[
-        'OmniDashboard.view.omni.Dashboard'
-    ],
-    layout:'vbox',
+    fullscreen:true,
     items:[
         {
-            xtype: 'omniNav',
-            docked : 'bottom',
+            xtype:'omniNav'
         },
         {
-            xtype: 'omniDashboard',
-            flex:1
+            xtype:'omniDashboard'
         }
     ]
 });

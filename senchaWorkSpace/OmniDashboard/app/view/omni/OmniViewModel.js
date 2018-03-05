@@ -2,6 +2,7 @@ Ext.define('OmniDashboard.view.omni.OmniViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.omniViewModel',
     data:{
+        "omniVersion":"Versao: 1.0.0",
         "i18n":{
             "OmniEshops":{
                 "view":{
@@ -121,7 +122,7 @@ Ext.define('OmniDashboard.view.omni.OmniViewModel', {
         omniSession:{
             id:'omniSession',
             model:'OmniDashboard.model.OmniSession',
-            autoLoad: false,
+            autoLoad: true,
             session:true
         },
         omniTaskQueue:{

@@ -922,10 +922,10 @@ $include-omnidashboard-view-aboutus-omnieshops: dynamic(true);;
 $include-omnidashboard-view-accountlogout-accountlogout: dynamic(true);;
 $include-omnidashboard-view-bigpicture-bigpicture: dynamic(true);;
 $include-omnidashboard-view-customercare-customercare: dynamic(true);;
+$include-omnidashboard-view-desktop-dashboard: dynamic(true);;
+$include-omnidashboard-view-desktop-desktop: dynamic(true);;
+$include-omnidashboard-view-desktop-desktopcontroller: dynamic(true);;
 $include-omnidashboard-view-inventorymanager-inventorymanager: dynamic(true);;
-$include-omnidashboard-view-omni-dashboard: dynamic(true);;
-$include-omnidashboard-view-omni-omnicontroller: dynamic(true);;
-$include-omnidashboard-view-omni-omnimain: dynamic(true);;
 $include-omnidashboard-view-omni-omniviewmodel: dynamic(true);;
 $include-omnidashboard-view-ordermanager-ordermanager: dynamic(true);;
 $include-omnidashboard-view-systemsettings-systemsettings: dynamic(true);;
@@ -935,6 +935,7 @@ $include-omnidashboard-view-usersupport-comunitysupport: dynamic(true);;
 $include-omnidashboard-view-usersupport-paidsupport: dynamic(true);;
 $include-omnidashboard-view-usersupport-usersupport: dynamic(true);;
 $include-omnidashboard-view-util-omnibutton: dynamic(true);;
+$include-omnidashboard-view-util-omnicontroller: dynamic(true);;
 $include-omnidashboard-view-util-omnidataview: dynamic(true);;
 $include-omnidashboard-view-util-omninav: dynamic(true);;
 $include-omnidashboard-view-util-omnipanel: dynamic(true);;
@@ -1006,14 +1007,6 @@ $current-package: 'theme-triton';
 $current-resource-root: $theme-triton-resource-root;
 $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext62/classic/theme-triton/sass/etc/all';
-
-/* including package OmniDashboard */
-$OmniDashboard-resource-root: '' !default;
-$OmniDashboard-resource-path: 'images' !default;
-$current-package: false;
-$current-resource-root: $OmniDashboard-resource-root;
-$relative-image-path-for-uis: $OmniDashboard-resource-path;
-@import '../../../../../OmniDashboard/sass/etc/all';
 
 
 /* ======================== VAR ======================== */
@@ -1198,14 +1191,6 @@ $current-package: false;
 $current-resource-root: $OmniDashboard-resource-root;
 $relative-image-path-for-uis: $OmniDashboard-resource-path;
 @import '../../../../../OmniDashboard/sass/var/all';
-
-/* including package OmniDashboard */
-$OmniDashboard-resource-root: '' !default;
-$OmniDashboard-resource-path: 'images' !default;
-$current-package: false;
-$current-resource-root: $OmniDashboard-resource-root;
-$relative-image-path-for-uis: $OmniDashboard-resource-path;
-@import '../../../../../OmniDashboard/classic/sass/var/all';
 
 
 /* ======================== RULE ======================== */

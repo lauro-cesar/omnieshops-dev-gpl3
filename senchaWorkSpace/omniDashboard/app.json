@@ -16,33 +16,22 @@
         "${toolkit.name}/overrides"
     ],
     "fashion": {
-
         "inliner": {
-
             "enable": false
         }
     },
-
-
     "sass": {
-
         "namespace": "OmniDashboard",
-
-       
         "etc": [
             "sass/etc/all.scss",
             "${toolkit.name}/sass/etc/all.scss"
         ],
-
-      
         "var": [
             "sass/var/all.scss",
             "sass/var",
             "${toolkit.name}/sass/var/all.scss",
             "${toolkit.name}/sass/var"
         ],
-
-       
         "src": [
             "sass/src",
             "${toolkit.name}/sass/src"
@@ -98,7 +87,10 @@
      "development": {
         "watch": {
             "delay": 1500
-        }
+        },
+        "tags": [
+            "fashion"
+        ]
     },
     "production": {
         "output": {
@@ -192,14 +184,15 @@
         },
         "modern": {
             "toolkit": "modern",
-            "theme": "theme-cupertino",
+            "theme": "theme-material",
+            "packager": "cordova",
             "cordova": {
                 "config": {
-                    "platforms": "ios",
+                    "platforms": "ios android",
                     "id": "com.omnieshops.OmniDashboard",
                     "name": "OmniDashboard"
                 }
-            },            
+            },                  
             "sass": {
                 "generated": {
                     "var": "modern/sass/save.scss",

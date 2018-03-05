@@ -46,11 +46,25 @@ Ext.define("OmniDashboard.view.util.OmniNav",{
         {
             xtype:'omniButton',
             iconCls:'x-fa fa-cogs',
-            visible:true,
-            hidden:false,
             tooltip:"Account settings",        
             handler:function(button) {
                 button.fireEvent('redirectTO','#app/systemSettings');
+            }
+        },
+        {
+            xtype:'omniButton',
+            iconCls:'x-fa fa-question-circle',
+            tooltip:"Suporte ao usuário",
+            handler:function(button){
+                button.fireEvent('redirectTO','#app/userSupport');
+            }
+        },
+        {
+            xtype:'omniButton',
+            iconCls:'x-fa fa-info-circle',
+            tooltip:'About Us',
+            handler:function(button) {
+                button.fireEvent('redirectTO','#app/aboutUs');
             }
         }
     ]

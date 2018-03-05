@@ -11,6 +11,9 @@ Ext.define("OmniDashboard.view.bigPicture.BigPicture",{
             xtype: 'omniPanel',
             title:'Bem vindo ap sistema OmniEshops',
             iconCls:'x-fa fa-home',
+            bind:{
+                html:'Version: {omniVersion}'
+            },
             html:'Not Implemented'
         }
     ]
