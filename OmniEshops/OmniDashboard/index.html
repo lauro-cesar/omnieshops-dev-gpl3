@@ -1,0 +1,73 @@
+{% extends theme~"/base.theme" %}
+{%- block OMNI_APP_JS -%}{% endblock %}
+{%- block OMNI_FOOTER_JS -%}{% endblock %}
+{%- block OMNI_DOCUMENT_BODY_HEADER -%}{%- endblock -%}
+{%- block OMNI_DOCUMENT_BODY_FOOTER -%}{%- endblock -%}
+{%- block SITE_CSS -%}{%- endblock -%}
+{%- block OMNI_EXTRA_CSS_HEADER -%}{%- endblock -%}
+
+
+{%- block OMNI_DOCUMENT_HTML_START -%}
+    <!DOCTYPE html>
+    <html manifest="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+        <meta charset="utf-8">
+        <meta name="author" content="OmniEshops - Everything from EveryWhere">
+{%- endblock -%}
+
+
+{%- block OMNI_DOCUMENT_HEAD_START -%}
+<head>
+    <script type="text/javascript">
+        var Ext = Ext || {}; 
+        
+        Ext.beforeLoad = function (tags) {
+
+            var s = location.search,
+                profile;
+
+            if (s.match(/\bclassic\b/)) {
+                profile = 'classic';
+            }
+            else if (s.match(/\bmodern\b/)) {
+                profile = 'modern';
+            }
+            else {
+                profile = tags.desktop ? 'classic' : 'modern';
+                //profile = tags.phone ? 'modern' : 'classic';
+            }
+
+            Ext.manifest = profile;
+
+
+        };
+    </script>
+
+    <script id="microloader" data-app="f2cff657-8ff0-45e1-b1d6-a637159b2233" type="text/javascript" src="bootstrap.js"></script>
+{%- endblock -%}
+
+
+{%- block OMNI_DOCUMENT_CORE_HEAD -%}
+    <title>
+        {%- block OMNI_DOCUMENT_TITLE -%} {{ shop['shopName']|escapeHtml() }} {%- endblock -%}
+        &nbsp;
+        {%- block OMNI_DOCUMENT_SUB_TITLE -%}  {%- endblock -%}
+    </title>
+{%- endblock -%}
+
+
+
+{% block OMNI_DOCUMENT_HEAD %}
+<style>
+    {% include theme~"/"~viewSize~"/dashboard/css/default.css" %}
+</style>
+        <script type="text/javascript" src="/lib/accounting.min.js"></script>
+{% endblock %}
+
+{% block OMNI_BODY_START %}
+    <body class="bg-light">
+    <div id=appLoadingIndicator>
+    {% include theme~"/"~viewSize~"/dashboard/loader.theme" %}
+    </div>
+{% endblock OMNI_BODY_START %}
