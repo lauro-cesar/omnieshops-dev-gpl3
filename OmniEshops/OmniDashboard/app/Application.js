@@ -56,6 +56,8 @@ Ext.define('OmniDashboard.Application', {
             // var omniApp = Ext.create('widget.phone');
             // omniApp.show();
         }
+
+        Ext.fly('appLoadingIndicator').hide();
     },
     models:[
         'OmniSession','OmniTask','OmniSetting','OmniSite','DesktopSetting','TabletSetting'

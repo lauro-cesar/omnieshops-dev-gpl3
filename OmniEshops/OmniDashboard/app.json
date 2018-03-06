@@ -100,7 +100,7 @@
             "manifest": "${build.id}.json",
             "js": "${build.id}/app.js",
             "appCache": {
-                "enable": true,
+                "enable": false,
                 "path": "cache.appcache"
             },
             "resources": {
@@ -112,7 +112,7 @@
             "cache": "${build.timestamp}"
         },
         "cache": {
-            "enable": true
+            "enable": false
         },
         "compressor": {
             "type": "yui"
@@ -123,15 +123,18 @@
     "testing": {
         "indexHtmlPath": "index.html",
         "output": {
-            "base": "/Users/olarva/Documents/Projetos/OmniEshops/appengine/omni-shop/templates/default_theme/build/${build.environment}",
+            "base": "/Users/olarva/Documents/Projetos/OmniEshops/appengine/omni-shop/static/descontos/omniasset",
             "page": {
-                "path":"dashboard.theme",
-                "enabled":true
+                "path":"../../templates/default_theme/build/testing/dashboard.theme",
+                "enabled":false
             },
-            "manifest": "${build.id}.json",
+            "manifest": {
+                "path":"${build.id}.json",
+                "embed":true
+            },
             "js": "${build.id}/app.js",
             "appCache": {
-                "enable": true,
+                "enable": false,
                 "path": "cache.appcache"
             },
             "resources": {
@@ -139,8 +142,11 @@
                 "shared": "resources"
             }
         },
-        "watch": {
-            "delay": 250
+        "loader": {
+            "cache": "${build.timestamp}"
+        },
+        "cache": {
+            "enable": false
         }
     },
 
