@@ -6,8 +6,10 @@
 {%- block OMNI_EXTRA_CSS_HEADER -%}{%- endblock -%}
 
 
+
 {%- block OMNI_DOCUMENT_HTML_START -%}
     <!DOCTYPE html>
+    <omnitag>Version 2018</omnitag>
     <html manifest="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
@@ -34,7 +36,6 @@
             }
             else {
                 profile = tags.desktop ? 'classic' : 'modern';
-                //profile = tags.phone ? 'modern' : 'classic';
             }
 
             Ext.manifest = profile;

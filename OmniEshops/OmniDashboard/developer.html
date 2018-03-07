@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html manifest="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+        <meta charset="utf-8">
+        <meta name="author" content="OmniEshops - Everything from EveryWhere">
+<head>
+
+    <script type="text/javascript">
+        var Ext = Ext || {};
+
+        Ext.beforeLoad = function (tags) {
+
+            var s = location.search,
+                profile;
+
+            if (s.match(/\bclassic\b/)) {
+                profile = 'classic';
+            }
+            else if (s.match(/\bmodern\b/)) {
+                profile = 'modern';
+            }
+            else {
+                profile = tags.desktop ? 'classic' : 'modern';
+            }
+
+            Ext.manifest = profile;
+
+
+        };
+    </script>
+
+    <script id="microloader" data-app="f2cff657-8ff0-45e1-b1d6-a637159b2233" type="text/javascript" src="bootstrap.js"></script>
+    <title>
+    </title>
+</head>
+
+    <body class="bg-light">
+    <div id=appLoadingIndicator>
+    </div>
+</body>
+</html>

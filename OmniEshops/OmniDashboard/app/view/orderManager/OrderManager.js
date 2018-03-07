@@ -21,24 +21,24 @@ Ext.define("OmniDashboard.view.orderManager.OrderManager",{
                     title: 'Rastreador de entrega',
                     iconCls:'x-fa fa-truck',
                     tooltip: 'Sua conta no OmniEshops'
-                
+
                 },
                 {
                     xtype:'omniPanel',
                     title: 'Clientes',
                     iconCls:'x-fa fa-users',
                     tooltip: 'Gerenciador de arquivos'
-    
+
                 },
                 {
                     xtype:'omniPanel',
                     title: 'Pedidos concluidos',
                     iconCls:'x-fa fa-database',
                     tooltip: 'Crie e gerencie seus sites e lojas'
-                    
-                }               
 
-                
+                }
+
+
 
             ]
         }

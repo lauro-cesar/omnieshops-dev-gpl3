@@ -3,12 +3,23 @@ Ext.define("OmniDashboard.view.util.OmniNav",{
     overflowHandler:'scroller',
     xtype:'omniNav',
     alias:'widget.omniNav',
-    border:false,
+    // border:false,
     pack:'start',
     defaults:{
         scale:'large'
     },
     ui:'footer',
+    mixins: [
+        'Ext.mixin.Responsive'
+    ],
+    responsiveConfig:{
+        wide:{
+            dock: 'right'
+        },
+        tall:{
+            dock: 'left'
+        },
+    },
     items:[
         {
             xtype:'omniButton',
@@ -58,7 +69,7 @@ Ext.define("OmniDashboard.view.util.OmniNav",{
             bind:{
                 iconCls:'x-fa {settingsIcon}',
             },
-            tooltip:"Account settings",        
+            tooltip:"Account settings",
             handler:function(button) {
                 button.fireEvent('redirectTO','#app/systemSettings');
             }

@@ -10,7 +10,7 @@ Ext.define("OmniDashboard.view.desktop.Dashboard",{
     //     'OmniDashboard.view.util.OmniTabPanel',
     //     'OmniDashboard.view.util.OmniNav',
     //     'OmniDashboard.view.util.OmniTray',
-    //     'OmniDashboard.view.bigPicture.BigPicture',  
+    //     'OmniDashboard.view.bigPicture.BigPicture',
     //     'OmniDashboard.view.customerCare.CustomerCare',
     //     'OmniDashboard.view.orderManager.OrderManager',
     //     'OmniDashboard.view.inventoryManager.InventoryManager',
@@ -20,16 +20,16 @@ Ext.define("OmniDashboard.view.desktop.Dashboard",{
     //     'OmniDashboard.view.userSupport.UserSupport',
     //     'OmniDashboard.view.aboutUs.AboutUs'
     // ],
-    
+
     alias:'widget.omniDashboard',
     xtype:'omniDashboard',
     reference:'omni-dashboard-panel',
     layout:'card',
-    defaults:{
-        html:null,
-        border:false,
-        frame:false
-    },
+    // defaults:{
+    //     html:null,
+    //     border:false,
+    //     frame:false
+    // },
     dockedItems: [
         {
             xtype: 'omniNav',

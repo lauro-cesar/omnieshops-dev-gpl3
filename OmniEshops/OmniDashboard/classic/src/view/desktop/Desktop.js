@@ -1,6 +1,7 @@
 Ext.define('OmniDashboard.view.desktop.Desktop', {
     extend: "Ext.container.Viewport",
     xtype: 'desktop',
+
     alias:'widget.desktop',
     controller: 'desktopController',
     viewModel: 'omniViewModel',
@@ -8,6 +9,7 @@ Ext.define('OmniDashboard.view.desktop.Desktop', {
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox'
     ],
+
     layout:'border',
     items: [{
         xtype:'omniDashboard',
