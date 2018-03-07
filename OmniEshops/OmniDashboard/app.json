@@ -116,7 +116,7 @@
     },
     "testing": {
         "output": {
-            "base": "../../../../OmniEshops/appengine/omni-shop/templates/default_theme/dashboard/app",
+            "base": "../../../../OmniEshops/appengine/omni-shop/templates/default_theme/dashboard/static",
             "page": {
                 "path": "../base.theme",
                 "enable": true
@@ -138,11 +138,11 @@
                     "embed": true,
                     "enable": true
                 },
-            "manifest": {
-                "path": "app.json",
-                "embed": true,
-                "enable": "${app.output.microloader.enable}"
-            }
+            // "manifest": {
+            //     "path": "app.json",
+            //     "embed": true,
+            //     "enable": "${app.output.microloader.enable}"
+            // }
         },
         "compressor":null,
         "cache": {
@@ -184,21 +184,21 @@
                 }
             }
         },
-        "osx":{
-            "toolkit": "classic",
-            "theme": "theme-triton",
-            "packager": "cordova",
-            "cordova": {
-                "config": {
-                    "platforms":"osx",
-                    "name": "OmniDashboard",
-                    "id": "com.omnieshops.OmniDashboard",
-                    "verbose": true,
-                    "path": "${app.dir}/cordova"
-                }
-            }
+        // "osx":{
+        //     "toolkit": "classic",
+        //     "theme": "theme-triton",
+        //     "packager": "cordova",
+        //     "cordova": {
+        //         "config": {
+        //             "platforms":"osx",
+        //             "name": "OmniDashboard",
+        //             "id": "com.omnieshops.OmniDashboard",
+        //             "verbose": true,
+        //             "path": "${app.dir}/cordova"
+        //         }
+        //     }
 
-        },
+        // },
         "modern": {
             "toolkit": "modern",
             "theme": "theme-material",
