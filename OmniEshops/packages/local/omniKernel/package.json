@@ -1,13 +1,13 @@
 {
-    "name": "omniInventory",
-    "framework": "ext",
+    "name": "omniKernel",
+    "framework": "ext62",
     "sencha": {
         "namespace": "OmniEshops",
         "type": "code",
         "toolkit":"",
         "creator": "OmniEshops",
-        "summary": "Inventory manager for OmniEshops network",
-        "detailedDescription": "Manage Inventory for Merchants ",
+        "summary": "Account manager for OmniEshops network",
+        "detailedDescription": "Manage accounts for Merchants, Developers and Custumers ",
         "version": "1.0.0",
         "compatVersion": "1.0.0",
         "format": "1",

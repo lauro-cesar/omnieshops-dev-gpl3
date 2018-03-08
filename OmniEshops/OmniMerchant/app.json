@@ -8,9 +8,6 @@
         "omniAccount",
         "package-loader"
     ],
-    "uses":[
-        "omniInventory"
-    ],
     "indexHtmlPath": "app.html",
     "classpath": [
         "app",
@@ -42,8 +39,6 @@
             "${toolkit.name}/sass/src"
         ]
     },
-
-
     "js": [
         {
             "path": "app.js",
@@ -51,7 +46,9 @@
         }
     ],
     "classic": {
-
+        "uses":[
+            "omniAccount"
+        ],
         "js": [
             // Remove this entry to individually load sources from the framework.
             {
@@ -62,6 +59,9 @@
 
 
     "modern": {
+        "uses":[
+            "omniAccount"
+        ],
         "js": [
             // Remove this entry to individually load sources from the framework.
             {
@@ -110,7 +110,9 @@
     },
 
     "development": {
-
+        "uses":[
+            "omniAccount"
+        ],
         "indexHtmlPath": "developer.html",
         "output": {
             "base": "${workspace.build.dir}/${build.environment}/${app.name}",

@@ -1,6 +1,6 @@
 {
     "name": "omniAccount",
-    "framework": "ext",
+    "framework": "ext62",
     "sencha": {
         "namespace": "OmniEshops",
         "type": "code",
@@ -45,7 +45,6 @@
             "path": [
                 "${package.dir}/examples"
             ]
-        },
-         "requires": []
+        }
     }
 }
