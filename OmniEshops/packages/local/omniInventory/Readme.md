@@ -1,2 +1,0 @@
-# omniInventory - Read Me
-

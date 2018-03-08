@@ -5,8 +5,7 @@
     "framework": "ext62",
     "requires": [
         "font-awesome",
-        "omniAccount",
-        "package-loader"
+        "omniAccount"
     ],
     "indexHtmlPath": "app.html",
     "classpath": [
@@ -45,32 +44,6 @@
             "bundle": true
         }
     ],
-    "classic": {
-        "uses":[
-            "omniAccount"
-        ],
-        "js": [
-            // Remove this entry to individually load sources from the framework.
-            {
-                "path": "${framework.dir}/build/ext-all-rtl-debug.js"
-            }
-        ]
-    },
-
-
-    "modern": {
-        "uses":[
-            "omniAccount"
-        ],
-        "js": [
-            // Remove this entry to individually load sources from the framework.
-            {
-                "path": "${framework.dir}/build/ext-modern-all-debug.js"
-            }
-        ]
-    },
-
-
     "css": [
         {
             "path": "${build.out.css.path}",
@@ -78,8 +51,6 @@
             "exclude": ["fashion"]
         }
     ],
-
-
      "loader": {
          "cache": false,
          "cacheParam": "_dc"
@@ -102,17 +73,12 @@
             "type": "yui"
         }
     },
-
      "testing": {
         "compressor": {
             "type": "yui"
         }
     },
-
     "development": {
-        "uses":[
-            "omniAccount"
-        ],
         "indexHtmlPath": "developer.html",
         "output": {
             "base": "${workspace.build.dir}/${build.environment}/${app.name}",
@@ -134,15 +100,11 @@
     },
 
     "bootstrap": {
-        "base": "${app.dir}",
-
+        "base": "${app.dir}/bootstrap",
         "manifest": "${build.id}.json",
-
         "microloader": "bootstrap.js",
         "css": "bootstrap.css"
     },
-
-
 
     "output": {
         "base": "../../../../OmniEshops/appengine/omni-shop/templates/default_theme/gerenciador",
@@ -221,5 +183,5 @@
     "ignore": [
         "(^|/)CVS(/?$|/.*?$)"
     ],
-    "id": "276f808d-91af-45ee-88b3-d70d353ab07a"
+    "id": "1ccd7f78-04b1-4197-a207-aa0aa976fef1"
 }

@@ -1,6 +1,5 @@
 {
     "name": "omniKernel",
-    "framework": "ext62",
     "sencha": {
         "namespace": "OmniEshops",
         "type": "code",

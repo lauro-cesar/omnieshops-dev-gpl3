@@ -1,7 +1,4 @@
-Ext.define('OmniEshops.shared.OmniAccountViewModel', {
-    extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.omni_account_view_model',
-    data:{
-        kernelVersion:'0.0.0.1'
-    }
+Ext.define('OmniEshops.account.OmniAccountViewModel', {
+    extend: 'OmniEshops.kernel.OmniKernelViewModel',
+    alias: 'viewmodel.omni_account_view_model'
  });

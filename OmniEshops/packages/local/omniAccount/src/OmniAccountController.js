@@ -1,4 +1,4 @@
-Ext.define('OmniEshops.shared.OmniAccountController', {
-    extend: 'Ext.app.ViewController',
+Ext.define('OmniEshops.account.OmniAccountController', {
+    extend: 'OmniEshops.kernel.OmniKernelController',
     alias: 'controller.omni_account_controller'
 });
