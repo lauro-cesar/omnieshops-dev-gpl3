@@ -1,6 +1,5 @@
 {
     "apps": [
-        "OmniDashboard",
         "OmniMerchant"
     ],
     "frameworks": {
@@ -8,7 +7,7 @@
             "path":"ext62",
             "version":"6.2.0.981"
         }
-                
+
     },
     "build": {
         "dir": "${workspace.dir}/build"

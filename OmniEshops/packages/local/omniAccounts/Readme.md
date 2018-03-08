@@ -1,2 +1,0 @@
-# omniAccounts - Read Me
-
