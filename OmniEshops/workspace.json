@@ -1,6 +1,7 @@
 {
     "apps": [
-        "OmniDashboard"
+        "OmniDashboard",
+        "OmniMerchant"
     ],
     "frameworks": {
         "ext62": {

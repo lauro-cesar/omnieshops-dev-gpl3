@@ -1,9 +1,22 @@
 {
     "name": "OmniDashboard",
     "namespace": "OmniDashboard",
-    "indexHtmlPath": "index.html",
+    "indexHtmlPath": "app.html",
     "version": "1.0.0.0",
     "framework": "ext62",
+    "appCache": {
+        "cache": [
+            "index.html"
+        ],
+        "network": [
+            "*"
+        ],
+        "fallback": []
+    },
+    "loader": {
+        "cache": "${build.timestamp}",
+        "cacheParam": "_dc"
+    },
     "classpath": [
         "app",
         "${toolkit.name}/src"
@@ -23,11 +36,14 @@
     ],
 
     "compressor": null,
-
     "requires": [
-        "font-awesome"
+        "font-awesome",
+        "package-loader"
     ],
-
+    "uses": [
+        "omniAccounts",
+        "omniDesktop"
+    ],
     "bootstrap":{
         "base": "${app.dir}"
     },
@@ -72,39 +88,10 @@
             "${toolkit.name}/sass/src"
         ]
     },
-    "output": {
-        "base": "${workspace.build.dir}/${build.environment}/${app.name}",
-        "appCache": {
-            "enable": false
-        },
-        "js": {
-                "path": "app.js",
-                "update":"full",
-                "bundle": true,
-                "enable": true,
-                "optimize": {
-                    "defines": true,
-                    "callParent": true,
-                    "requires": true
-                }
-        },
-        "microloader": {
-                "path": "microloader.js",
-                "embed": true,
-                "enable": true
-            },
-        "manifest": {
-            "path": "app.json",
-            "embed": true,
-            "enable": "${app.output.microloader.enable}"
-        }
-    },
-
     "cache": {
         "enable": false,
         "deltas": "deltas"
     },
-
 
     "development": {
         "watch": {
@@ -114,42 +101,55 @@
             "fashion"
         ]
     },
-    "testing": {
-        "output": {
-            "base": "../../../../OmniEshops/appengine/omni-shop/templates/default_theme/dashboard/static",
-            "page": {
-                "path": "../base.theme",
-                "enable": true
-            },
-            "appCache": {
-                "enable": false
-            },
-            "js": {
-                    "path": "app.js",
-                    "enable": true,
-                    "optimize": {
-                        "defines": true,
-                        "callParent": true,
-                        "requires": true
-                    }
-            },
-            "microloader": {
-                    "path": "microloader.js",
-                    "embed": true,
-                    "enable": true
-                },
-            // "manifest": {
-            //     "path": "app.json",
-            //     "embed": true,
-            //     "enable": "${app.output.microloader.enable}"
-            // }
+
+    "output": {
+        "js": {
+            "path": "app.js",
+            "enable": true,
+            "bundle": true,
+            "optimize": {
+                "defines": true,
+                "callParent": true,
+                "requires": true
+            }
         },
-        "compressor":null,
-        "cache": {
+        "microloader": {
+            "path": "microloader.js",
+            "embed": true,
             "enable": false
+        },
+        "manifest": {
+            "path": "app.json",
+            "embed": false,
+            "enable": "${app.output.microloader.enable}"
+        },
+        "resources": "resources",
+        "slicer": {
+            "path": "${app.output.resources}/images",
+            "enable": false
+        },
+        "appCache":{
+            "enable": false
+        },
+        "css": [
+            {
+                "path": "${build.out.css.path}",
+                "bundle": true,
+                "exclude": ["fashion"]
+            }
+        ],
+        "base": "../../../../OmniEshops/appengine/omni-shop/templates/default_theme/gerenciador",
+        "page": {
+            "path": "base.theme",
+            "enable": true
         }
     },
 
+    "testing": {
+        "compressor": {
+            "type": "yui"
+        }
+    },
     "production": {
         "compressor": {
             "type": "yui"
@@ -184,21 +184,6 @@
                 }
             }
         },
-        // "osx":{
-        //     "toolkit": "classic",
-        //     "theme": "theme-triton",
-        //     "packager": "cordova",
-        //     "cordova": {
-        //         "config": {
-        //             "platforms":"osx",
-        //             "name": "OmniDashboard",
-        //             "id": "com.omnieshops.OmniDashboard",
-        //             "verbose": true,
-        //             "path": "${app.dir}/cordova"
-        //         }
-        //     }
-
-        // },
         "modern": {
             "toolkit": "modern",
             "theme": "theme-material",
