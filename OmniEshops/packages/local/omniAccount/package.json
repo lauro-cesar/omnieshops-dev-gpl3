@@ -3,7 +3,7 @@
     "sencha": {
         "namespace": "OmniEshops",
         "type": "code",
-        "toolkit":"",
+        "toolkit":"modern",
         "creator": "OmniEshops",
         "summary": "Account manager for OmniEshops network",
         "detailedDescription": "Manage accounts for Merchants, Developers and Custumers ",
@@ -37,7 +37,6 @@
         "overrides": [
             "${package.dir}/overrides"
         ],
-
         "example": {
             "path": [
                 "${package.dir}/examples"

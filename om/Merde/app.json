@@ -1,0 +1,176 @@
+{
+    "name": "OmniMerchant",
+    "namespace": "OmniMerchant",
+    "version": "1.0.0.0",
+    "framework": "ext62",
+    "toolkit": "modern",
+    "theme": "theme-material",
+    "requires": [
+        "font-awesome",
+        "omniAccount"
+    ],
+    "indexHtmlPath": "app.html",
+    "classpath": [
+        "app"
+    ],
+    "overrides": [
+        "overrides"
+    ],
+    "fashion": {
+        "inliner": {
+            "enable": false
+        }
+    },
+    "sass": {
+        "namespace": "OmniMerchant",
+        "etc": [
+            "sass/etc/all.scss",
+            "${toolkit.name}/sass/etc/all.scss"
+        ],
+        "var": [
+            "sass/var/all.scss",
+            "sass/var"
+        ],
+        "src": [
+            "sass/src"
+        ]
+    },
+    "js": [
+        {
+            "path": "app.js",
+            "bundle": true
+        }
+    ],
+    "css": [
+        {
+            "path": "${build.out.css.path}",
+            "bundle": true,
+            "exclude": ["fashion"]
+        }
+    ],
+     "loader": {
+         "cache": false,
+         "cacheParam": "_dc"
+     },
+
+    "production": {
+        "output": {
+            "appCache": {
+                "enable": true,
+                "path": "cache.appcache"
+            }
+        },
+        "loader": {
+            "cache": "${build.timestamp}"
+        },
+        "cache": {
+            "enable": true
+        },
+        "compressor": {
+            "type": "yui"
+        }
+    },
+     "testing": {
+        "compressor": {
+            "type": "yui"
+        }
+    },
+    "development": {
+        "indexHtmlPath": "developer.html",
+        "output": {
+            "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+            "page": "developer.html",
+            "manifest": "${build.id}.json",
+            "js": "${build.id}/app.js",
+            "appCache": {
+                "enable": false
+            },
+            "resources": {
+                "path": "${build.id}/resources",
+                "shared": "resources"
+            }
+        },
+        "watch": {
+            "delay": 250
+        }
+    },
+
+    "bootstrap": {
+        "base": "${app.dir}",
+        "manifest": "${build.id}.json",
+        "microloader": "bootstrap.js",
+        "css": "bootstrap.css"
+    },
+
+    "output": {
+        "indexHtmlPath": "app.html",
+        "base": "../../../../OmniEshops/appengine/omni-shop/templates/default_theme/gerenciador",
+        "page": {
+            "path": "base.theme",
+            "enable": true
+        },
+        // "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+        // "page": "index.html",
+        "manifest": "${build.id}.json",
+        "js": "${build.id}/app.js",
+        "appCache": {
+            "enable": false
+        },
+        "resources": {
+            "path": "${build.id}/resources",
+            "shared": "resources"
+        }
+    },
+
+    "cache": {
+        "enable": true,
+        "deltas": "${build.id}/deltas"
+    },
+    "appCache": {
+        "cache": [
+            "app.html"
+        ],
+        "network": [
+            "*"
+        ],
+        "fallback": []
+    },
+
+    "resources": [
+        {
+            "path": "resources",
+            "output": "shared"
+        },
+        {
+            "path": "${build.id}/resources"
+        }
+    ],
+    "archivePath": "archive/${build.id}",
+    "ignore": [
+        "(^|/)CVS(/?$|/.*?$)"
+    ],
+    "id": "1ccd7f78-04b1-4197-a207-aa0aa976fef1",
+    "progressive": {
+        "manifest": {
+            "name": "OmniEshops Merchants dashboard",
+            "short_name": "Dashboard",
+            "icons": [{
+                "src": "resources/icon-small.png",
+                "sizes": "96x96"
+            }, {
+                "src": "resources/icon-medium.png",
+                "sizes": "192x192"
+            }, {
+                "src": "resources/icon-large.png",
+                "sizes": "256x256"
+            }],
+            "theme_color": "#054059",
+            "background_color": "#054059",
+            "display": "standalone",
+            "orientation": "portrait",
+            "start_url": "/dashboard/start.html"
+        }
+    }
+
+
+}

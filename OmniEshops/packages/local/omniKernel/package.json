@@ -3,7 +3,6 @@
     "sencha": {
         "namespace": "OmniEshops",
         "type": "code",
-        "toolkit":"",
         "creator": "OmniEshops",
         "summary": "Account manager for OmniEshops network",
         "detailedDescription": "Manage accounts for Merchants, Developers and Custumers ",
@@ -18,7 +17,19 @@
                 }
             ]
         },
-        "output": "${package.dir}/build",
+        "output": "${package.dir}/build/${toolkit.name}",
+        "framework": "ext",
+        "builds": {
+            "classic": {
+                "toolkit": "classic",
+                "theme": "theme-triton"
+            },
+            "modern": {
+                "toolkit": "modern",
+                "theme": "theme-material"
+            }
+        },
+
         "sass" : {
             "namespace": "OmniEshops",
             "etc": [
@@ -32,14 +43,12 @@
             ]
         },
         "classpath": [
-            "${package.dir}/src",
             "${package.dir}/${toolkit.name}/src",
-            "${framework.dir}/build/ext-all-rtl-debug.js"
+            "${package.dir}/src"
         ],
         "overrides": [
             "${package.dir}/overrides"
         ],
-
         "example": {
             "path": [
                 "${package.dir}/examples"

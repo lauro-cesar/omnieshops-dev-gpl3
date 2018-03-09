@@ -3,18 +3,18 @@
     "namespace": "OmniMerchant",
     "version": "1.0.0.0",
     "framework": "ext62",
+    "toolkit": "modern",
+    "theme": "theme-material",
     "requires": [
         "font-awesome",
         "omniAccount"
     ],
-    "indexHtmlPath": "app.html",
+    "indexHtmlPath": "dev.html",
     "classpath": [
-        "app",
-        "${toolkit.name}/src"
+        "app"
     ],
     "overrides": [
-        "overrides",
-        "${toolkit.name}/overrides"
+        "overrides"
     ],
     "fashion": {
         "inliner": {
@@ -23,19 +23,19 @@
     },
     "sass": {
         "namespace": "OmniMerchant",
+        "generated": {
+            "var": "sass/save.scss",
+            "src": "sass/save"
+        },
         "etc": [
-            "sass/etc/all.scss",
-            "${toolkit.name}/sass/etc/all.scss"
+            "sass/etc/all.scss"
         ],
         "var": [
             "sass/var/all.scss",
-            "sass/var",
-            "${toolkit.name}/sass/var/all.scss",
-            "${toolkit.name}/sass/var"
+            "sass/var"
         ],
         "src": [
-            "sass/src",
-            "${toolkit.name}/sass/src"
+            "sass/src"
         ]
     },
     "js": [
@@ -52,15 +52,20 @@
         }
     ],
      "loader": {
-         "cache": false,
+         "cache": true,
          "cacheParam": "_dc"
      },
-
     "production": {
         "output": {
             "appCache": {
                 "enable": true,
                 "path": "cache.appcache"
+            },
+            "indexHtmlPath": "app.html",
+            "base": "../../../../OmniEshops/appengine/omni-shop/templates/default_theme/gerenciador",
+            "page": {
+                "path": "base.theme",
+                "enable": true
             }
         },
         "loader": {
@@ -73,115 +78,43 @@
             "type": "yui"
         }
     },
-     "testing": {
-        "compressor": {
-            "type": "yui"
-        }
+    "testing": {
     },
     "development": {
-        "indexHtmlPath": "developer.html",
-        "output": {
-            "base": "${workspace.build.dir}/${build.environment}/${app.name}",
-            "page": "developer.html",
-            "manifest": "${build.id}.json",
-            "js": "${build.id}/app.js",
-            "appCache": {
-                "enable": false
-            },
-            "resources": {
-                "path": "${build.id}/resources",
-                "shared": "resources"
-            }
-        },
-
         "watch": {
             "delay": 250
         }
     },
-
     "bootstrap": {
-        "base": "${app.dir}/bootstrap",
-        "manifest": "${build.id}.json",
+        "base": "${app.dir}",
         "microloader": "bootstrap.js",
         "css": "bootstrap.css"
     },
-
-    "output": {
-        "base": "../../../../OmniEshops/appengine/omni-shop/templates/default_theme/gerenciador",
-        "page": {
-            "path": "base.theme",
-            "enable": true
-        },
-        // "base": "${workspace.build.dir}/${build.environment}/${app.name}",
-        // "page": "index.html",
-        "manifest": "${build.id}.json",
-        "js": "${build.id}/app.js",
-        "appCache": {
-            "enable": false
-        },
-        "resources": {
-            "path": "${build.id}/resources",
-            "shared": "resources"
-        }
-    },
-
     "cache": {
         "enable": true,
-        "deltas": "${build.id}/deltas"
+        "deltas": "deltas"
     },
-
-
     "appCache": {
         "cache": [
-            "app.html"
+            "dev.html"
         ],
         "network": [
             "*"
         ],
-        "fallback": []
+        "fallback": [
+            "dev.html"
+        ]
     },
-
     "resources": [
         {
             "path": "resources",
             "output": "shared"
-        },
-        {
-            "path": "${toolkit.name}/resources"
-        },
-        {
-            "path": "${build.id}/resources"
         }
     ],
-
-
-    "archivePath": "archive/${build.id}",
-
-    "builds": {
-        "classic": {
-            "toolkit": "classic",
-            "theme": "theme-triton",
-            "sass": {
-                "generated": {
-                    "var": "classic/sass/save.scss",
-                    "src": "classic/sass/save"
-                }
-            }
-        },
-
-        "modern": {
-            "toolkit": "modern",
-            "theme": "theme-material",
-            "sass": {
-                "generated": {
-                    "var": "modern/sass/save.scss",
-                    "src": "modern/sass/save"
-                }
-            }
-        }
-    },
+    "archivePath": "archive",
+    "slicer": null,
     "ignore": [
         "(^|/)CVS(/?$|/.*?$)"
     ],
-    "id": "1ccd7f78-04b1-4197-a207-aa0aa976fef1"
+    "id": "108f6f1a-e20b-45ca-b23d-51a716b16ca8"
 }
