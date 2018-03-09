@@ -3,6 +3,7 @@
     "sencha": {
         "namespace": "OmniEshops",
         "type": "code",
+        "framework":"ext",
         "toolkit":"modern",
         "creator": "OmniEshops",
         "summary": "Account manager for OmniEshops network",
@@ -10,14 +11,7 @@
         "version": "1.0.0",
         "compatVersion": "1.0.0",
         "format": "1",
-        "slicer": {
-            "js": [
-                {
-                    "path": "${package.dir}/sass/example/custom.js",
-                    "isWidgetManifest": true
-                }
-            ]
-        },
+        "slicer":null,
         "output": "${package.dir}/build",
         "sass" : {
             "namespace": "OmniEshops",

@@ -52,13 +52,23 @@
         }
     ],
      "loader": {
-         "cache": true,
+         "cache": false,
          "cacheParam": "_dc"
      },
     "production": {
         "output": {
+            "microloader": {
+                "path": "microloader.js",
+                "embed": true,
+                "enable": true
+            },
+            "manifest": {
+                "path": "app.json",
+                "embed": false,
+                "enable": "${app.output.microloader.enable}"
+            },
             "appCache": {
-                "enable": true,
+                "enable": false,
                 "path": "cache.appcache"
             },
             "indexHtmlPath": "app.html",
@@ -68,16 +78,11 @@
                 "enable": true
             }
         },
-        "loader": {
-            "cache": "${build.timestamp}"
-        },
-        "cache": {
-            "enable": true
-        },
         "compressor": {
             "type": "yui"
         }
     },
+
     "testing": {
     },
     "development": {
@@ -87,23 +92,22 @@
     },
     "bootstrap": {
         "base": "${app.dir}",
+        "manifest":"manifest.json",
         "microloader": "bootstrap.js",
         "css": "bootstrap.css"
     },
     "cache": {
-        "enable": true,
+        "enable": false,
         "deltas": "deltas"
     },
     "appCache": {
         "cache": [
-            "dev.html"
+            "index.html"
         ],
         "network": [
             "*"
         ],
-        "fallback": [
-            "dev.html"
-        ]
+        "fallback": []
     },
     "resources": [
         {

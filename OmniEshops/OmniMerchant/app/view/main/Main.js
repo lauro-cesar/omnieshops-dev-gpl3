@@ -39,7 +39,8 @@ Ext.define('OmniMerchant.view.main.Main', {
         },{
             title: 'Users',
             iconCls: 'x-fa fa-user',
-            xtype:'omni_account_manager'
+            xtype:'panel',
+            html:'Mala'
         },{
             title: 'Groups',
             iconCls: 'x-fa fa-users',

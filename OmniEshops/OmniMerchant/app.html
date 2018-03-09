@@ -19,6 +19,13 @@
 
 {% block OMNI_DOCUMENT_HEAD %}
 
+<script type="text/javascript">
+    var Ext = Ext || {};
+    Ext.beforeLoad = function (tags) {
+        Ext.manifest = 'modern';
+    };
+</script>
+
 <script id="microloader" data-app="108f6f1a-e20b-45ca-b23d-51a716b16ca8" type="text/javascript" src="bootstrap.js"></script>
 
 <title>
